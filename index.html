@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Control buttons -->
+  <div class="control-buttons">
+    <span>Start Game</span>
+  </div>
+
+
+  <!-- Info Container -->
+  <div class="info-container">
+    <div class="name">
+      Hello: <span></span>
+    </div>
+    <div class="tries">
+      Wrong Tries: <span>0</span>
+    </div>
+  </div>
+
+
+  <!-- images Container -->
+  <div class="memory-game-blocks">
+    <div class="game-block" data-technology="angular">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/angular.png" alt="angular">
+      </div>
+    </div>
+
+    <div class="game-block" data-technology="angular">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/angular.png" alt="angular">
+      </div>
+    </div>
+
+    <div class="game-block" data-technology="css">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/css.png" alt="css">
+      </div>
+    </div>
+    <div class="game-block" data-technology="css">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/css.png" alt="css">
+      </div>
+    </div>
+    <div class="game-block" data-technology="html">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/html.png" alt="html">
+      </div>
+    </div>
+    <div class="game-block" data-technology="html">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/html.png" alt="html">
+      </div>
+    </div>
+    <div class="game-block" data-technology="js">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/js.png" alt="js">
+      </div>
+    </div>
+    <div class="game-block" data-technology="js">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/js.png" alt="js">
+      </div>
+    </div>
+    <div class="game-block" data-technology="bootstrap">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/bootstrap.png" alt="bootstrap">
+      </div>
+    </div>
+    <div class="game-block" data-technology="bootstrap">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/bootstrap.png" alt="bootstrap">
+      </div>
+    </div>
+    <div class="game-block" data-technology="react">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/react.png" alt="react">
+      </div>
+    </div>
+    <div class="game-block" data-technology="react">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/react.png" alt="react">
+      </div>
+    </div>
+    <div class="game-block" data-technology="tailwind">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/csstailwind.png" alt="tailwind">
+      </div>
+    </div>
+    <div class="game-block" data-technology="tailwind">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/csstailwind.png" alt="tailwind">
+      </div>
+    </div>
+    <div class="game-block" data-technology="sass">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/sass.png" alt="sass">
+      </div>
+    </div>
+    <div class="game-block" data-technology="sass">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/sass.png" alt="sass">
+      </div>
+    </div>
+    <div class="game-block" data-technology="vuejs">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/vuejs.png" alt="vuejs">
+      </div>
+    </div>
+    <div class="game-block" data-technology="vuejs">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/vuejs.png" alt="vuejs">
+      </div>
+    </div>
+    <div class="game-block" data-technology="docker">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/docker.png" alt="docker">
+      </div>
+    </div>
+    <div class="game-block" data-technology="docker">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="imgs/docker.png" alt="docker">
+      </div>
+    </div>
+  </div>
+  <div class="win"></div>
+  <audio src="audio/success.mp4" preload="auto" id="success"></audio>
+  <audio src="audio/fail.mp4" preload="auto" id="fail"></audio>
+  <audio src="audio/onstart.mp4" preload="auto" id="onstart"></audio>
+  <script src="index.js"></script>
+</body>
+</html>
